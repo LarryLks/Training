@@ -1,0 +1,120 @@
+
+body{
+    background-image: url(https://paulryan.com.au/wp-content/uploads/2015/01/high-resolution-wallpapers-25.jpg”);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.translucentLayer{
+    width: 95%;
+    background-color: rgba(0, 0, 0, 0.5);   
+    margin: auto;
+    padding-top:1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 1%;
+    border-radius: 1%;
+    border: 0;
+    overflow-x: hidden;
+    color: white;
+}
+
+.translucentLayer > table{
+   margin: auto;
+   border-radius: 1%;
+}
+
+.translucentLayer > table > tr{
+    border: 1;
+    margin: auto;
+}
+
+.translucentLayer > table{
+    padding-left: 1000;
+}
+
+.translucentLayer > table > tr > td{
+    margin: auto;
+}
+
+
+.HeaderContainer{
+    width: 95%;
+    margin: auto;
+    border-style: hidden;
+}
+.navBar{
+    width: 50%;
+    float: left;
+    border-style: hidden;
+    opacity: 1;
+}
+
+.navTitle{
+    width: 50%;
+    float: left;
+    padding: 10px 0px;
+    border-style: hidden;
+    font-size: 2vw;
+    text-align: left;
+    opacity: 1;
+    color:red;
+}
+
+.navBar a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+    font-size: 2vw;
+  }
+.navBar a:hover {
+    background-color: #ddd;
+    color: black;
+    opacity: 0.5;
+    border-radius: 10%;
+  }
+  
+.navBar a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.myPhoto{
+    border-style: hidden;
+}
+
+h1{
+    color:blue;
+    border-style: groove;
+    background-color: aqua;
+}
+
+h3{
+    color:rgb(1, 161, 253)
+}
+
+
+p{
+    color: rgb(255, 255, 255);
+}
+
+ul{
+    color: aqua;
+}
+
+div{
+    border-style: double;
+    text-align: center;
+}
+
+body{
+    background-color: cadetblue;
+}
+
+footer{
+    color: white;
+}
