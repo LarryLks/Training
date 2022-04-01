@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Book Management System</title>
+</head>
+<body>
+
+    <script>
+        alert("Welcome to the best book management system.\n  Here you can maintain your books easily.");
+
+        var books = [];
+
+        var input = prompt("What operations do you want to perform? \n Add a book -> [add] \n View a book -> [view] \n Delete a book -> [del] \n Exit System? -> [exit]")
+    
+    while(input != "exit"){
+        if(input == "add")
+            addBook();
+        else if (input == "view")
+            viewBook();
+        else if (input == "del")
+            delBook();
+        else{
+            alert("Please enter a valid option");
+        }
+        input = prompt("What operations do you want to perform? \n Add a book -> [add] \n View a book -> [view] \n Delete a book -> [del] \n Exit System? -> [exit]")
+    }
+
+    alert("Hey!! Thank you for using our system.");
+    
+    function addBook(){
+        var book = prompt("Enter the name of the book.");
+        var res =  prompt("Are you sure you want to add the book? y/n");
+        if(res == "y")
+            books.push(book);
+        else
+        alert("Cancelled adding book to the system");
+    }
+
+    function viewBook(){
+        console.log("The available books are: <br>");
+        for(var book of books){
+            console.log(book);
+        }
+    }
+
+    function delBook(){
+        var name = prompt("Enter the name of the book to be deleted");
+        var index = books.indexOf(name);
+        if(index == -1){
+            console.log("Specified book is not present");
+        }
+        else{
+            var res =  prompt("Are you sure you want to add the book? y/n");
+
+            if(res){}
+
+            books.splice(index, 1);
+            console.log("Specified book is deleted");
+        }
+    }
+    </script>
+    
+</body>
+</html>
